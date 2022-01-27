@@ -1,0 +1,27 @@
+<html>
+
+<head></head>
+
+<body>
+  hi
+
+  <button id="myButton" type="button">Click me</button>
+  <img id="myImg" src="" />
+
+
+  <script>
+    document.querySelector('#myButton').addEventListener('click', getImage);
+
+    async function getImage() {
+      const res = await fetch('/.netlify/functions/generate-flair');
+      const blob = await res.blob();
+
+      const src = URL.createObjectURL(blob);
+
+      document.querySelector('#myImg').src = src;
+    }
+
+  </script>
+</body>
+
+</html>

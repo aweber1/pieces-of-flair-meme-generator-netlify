@@ -1,0 +1,12 @@
+{
+  "name": "pieces-of-flair-meme-generator",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "3.48.0",
+    "jimp": "0.16.1",
+    "node-fetch": "2.6.7"
+  }
+}
