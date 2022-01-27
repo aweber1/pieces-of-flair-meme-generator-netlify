@@ -1,3 +1,9 @@
 [build]
   publish="site"
   functions="functions"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Enable CORS
+    Access-Control-Allow-Origin = "*"
