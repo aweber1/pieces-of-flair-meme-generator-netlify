@@ -22,6 +22,9 @@ exports.handler = async (event) => {
   return {
     statusCode: 200,
     body: blobUrl,
+    headers: {
+      "access-control-allow-origin": "*",
+    },
   };
 };
 
